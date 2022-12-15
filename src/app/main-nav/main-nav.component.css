@@ -1,0 +1,48 @@
+        @font-face {
+            font-family: ALoveofThunder;
+            src: url(/src/assets/font/ALoveofThunder.ttf) format("opentype");
+        }
+        
+        .sidenav-container {
+            height: 100%;
+        }
+        
+        .sidenav {
+            width: 150px;
+        }
+        
+        .sidenav .mat-toolbar {
+            background: inherit;
+        }
+        
+        .mat-toolbar.mat-primary {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .w3-dropdown-content {
+            margin-top: 10px;
+        }
+        
+        .fa-graduation-cap,
+        .fa-briefcase {
+            margin-bottom: -10px;
+        }
+        
+        .fa-home,
+        .fa-user,
+        .fa-graduation-cap,
+        .fa-briefcase,
+        .fa-folder,
+        .fa-envelope {
+            font-family: "ALoveofThunder";
+        }
+        
+        .mat-nav-list .mat-list-item:focus {
+            background-color: rgba(0, 0, 0, 0.1);
+        }

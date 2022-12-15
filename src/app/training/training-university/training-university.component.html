@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+<div *ngFor="let study of university" class="w3-2021-rust" style="border-radius: 30px; margin-top:30px;">
+    <mat-card style="background-color:rgb(20, 21, 21)">
+        <mat-card-title>{{ study.title }}</mat-card-title>
+        <mat-card-subtitle>{{ study.university }}</mat-card-subtitle>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-4"><b>From: </b> {{ study.from | date: 'MMM, y' }}</div>
+                <div class="col-md-4"><b>To: </b> {{ study.to | date: 'MMM, y' }}</div>
+                <div class="col-md-4" style="padding-right: 5%;padding-left:15px;margin-top:20px;"><img mat-card-image src="{{ study.imageUrl }}" alt="Logo Universidad/Insituto"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">{{ study.info }}</div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <hr>
+</div>

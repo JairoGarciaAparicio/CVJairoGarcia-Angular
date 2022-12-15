@@ -1,0 +1,17 @@
+<div class="bgimg-2 w3-display-container">
+    <div class="container top-5">
+        <div class="row" style="margin-top:80px;">
+            <div class="col" style="margin-top:60px">
+                <div class="list-group">
+                    <a routerLink="./{{ project }}" *ngFor="let project of projects" class="bold">
+                        {{ project }}
+                    </a>
+                </div>
+                <span class="arrow circle up" style="margin-left:5px;margin-top:35px;"></span>
+            </div>
+            <div class="col-9">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

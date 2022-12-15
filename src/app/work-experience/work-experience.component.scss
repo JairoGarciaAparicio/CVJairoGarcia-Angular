@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@keyframes moviendrew {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.arrow {
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: goldenrod;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 50%;
+        border-style: solid;
+        border-color: #000;
+        border-width: 6px 6px 0 0;
+        position: absolute;
+        transform-origin: 50% 50%;
+    }
+    &.up::before {
+        transform: rotate(-45deg);
+        margin: -16px 0 0 -15px;
+    }
+    &::after {
+        content: '';
+        display: block;
+        top: 50%;
+        left: 50%;
+        border-style: solid;
+        border-color: #000;
+        position: absolute;
+        transform-origin: 50% 50%;
+    }
+    &.up::after {
+        width: 0;
+        height: 40px;
+        border-width: 0 6px 0 0;
+        transform: translate(-3px, -18px);
+    }
+    &.circle {
+        background: rgba(216, 203, 20, 0.75);
+        border-radius: 50px;
+    }
+    &.debug {
+        outline: 1px solid darkblue;
+        &::before {
+            outline: 1px solid red;
+        }
+    }
+}

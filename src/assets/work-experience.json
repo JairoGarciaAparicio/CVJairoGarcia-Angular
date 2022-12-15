@@ -1,0 +1,50 @@
+{
+    "workExperience": [{
+            "name": "Sia Group",
+            "relativeUrl": "job1"
+        },
+        {
+            "name": "CAM",
+            "relativeUrl": "job2"
+        },
+        {
+            "name": "Publihoy",
+            "relativeUrl": "job3"
+        }
+
+    ],
+
+    "job1": [{
+        "entity": "Sia Group",
+        "position": "Full Stack Developer",
+        "from": "03/01/2021",
+        "to": null,
+        "name": "Digital signature holder",
+        "technology": "Java, JavaEE, JavaScript, Angular, Css, Html, PostgresSQL/Oracle, Maven, SVN, Git,  Ajax, jQuery, Okta.",
+        "responsability": "Development of new functionalities of the signature book, execution of projects through small developments to adjust the functionality to the needs of the clients, documentation and tests carried out on the new versions.",
+        "imageUrl": "https://s03.s3c.es/imag/_v0/700x420/2/b/2/700x420_sia-logo.jpg"
+
+    }],
+    "job2": [{
+        "entity": "CAM",
+        "position": "Home help coordinator",
+        "from": "02/10/2016",
+        "to": "11/04/2020",
+        "name": "Home help Community of Madrid",
+        "technology": "Database, CRM, Office package.",
+        "responsability": "As coordinator of the home help service, he managed the daily incidents of the service, organized the team schedules, visited the users, made social reports, registered users and workers in the system, evaluated the degree of dependency.",
+        "imageUrl": "https://opovictor.es/wp-content/uploads/2017/07/logo-vector-comunidad-madrid.jpg"
+
+    }],
+    "job3": [{
+        "entity": "Publihoy",
+        "position": "Layout artist and graphic designer",
+        "from": "03/03/2014",
+        "to": "02/09/2016",
+        "name": "Publihoy",
+        "technology": "Adobe cs6 Package.",
+        "responsability": "Responsible for the creative part of design and layout of the magazine.",
+        "imageUrl": "https://adser.es/wp-content/uploads/2016/02/publihoy.png"
+
+    }]
+}

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+<div *ngFor="let job3 of job3List" class="w3-light-blue" style="border-radius: 10px;margin-top:30px;">
+    <mat-card style="background-color:rgb(20, 21, 21); border-radius: 10px;padding:30px;">
+        <mat-card-title>{{ job3.entity }}</mat-card-title>
+        <mat-card-subtitle>{{ job3.position }}</mat-card-subtitle>
+        <div class="row " style="margin-left:20px; ">
+            <div class="col-md-4 "><b>From: </b> {{ job3.from | date: 'MMM, yy' }}</div>
+            <div class="col-md-4 "><b>To: </b> {{ job3.to | date: 'MMM, yy' }}</div>
+            <div class="col-md-4 " style="padding-right: 10%;margin-top:30px; ">
+                <img mat-card-image src="{{ job3.imageUrl }}" alt="Company Logo"></div>
+        </div>
+        <div style="margin-left:20px;">
+            <div class="row col-md-12 "><b>Name </b></div>
+            <div class="row col-md-12 ">{{ job3.name }}</div>
+            <div class="row col-md-12 "><b>Technologies </b></div>
+            <div class="row col-md-12 ">{{ job3.technology }}</div>
+            <div class="row col-md-12 "><b>Responsabilities </b></div>
+            <div class="row col-md-12 ">{{ job3.responsability }}</div>
+        </div>
+    </mat-card>
+    <hr>
+</div>

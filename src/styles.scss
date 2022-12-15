@@ -1,0 +1,410 @@
+ /* You can add global styles to this file, and also import other style files */
+ 
+ @import "~@angular/material/prebuilt-themes/purple-green.css";
+ @font-face {
+     font-family: geometos;
+     src: url(assets/font/Geometos.ttf) format("opentype");
+ }
+ 
+ @font-face {
+     font-family: againts;
+     src: url(assets/font/againts.otf) format("opentype");
+ }
+ 
+ @font-face {
+     font-family: ALoveofThunder;
+     src: url(assets/font/ALoveofThunder.ttf) format("opentype");
+ }
+ 
+ html,
+ body {
+     height: 100%;
+ }
+ 
+ body {
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+ 
+ .custom-row {
+     margin: 0;
+     font-family: "geometos";
+ }
+ 
+ body,
+ h1,
+ h2,
+ h4,
+ h6 {
+     font-family: sans-serif;
+ }
+ 
+ h3,
+ h5 {
+     font-family: "ALoveofThunder";
+     font-size: 44px;
+     letter-spacing: 3px;
+     /*line-height: 1;*/
+     color: #fff;
+ }
+ 
+ body,
+ html {
+     height: 100%;
+     color: #777;
+     /*line-height: 1.8;*/
+ }
+ /* Create a Parallax Effect */
+ 
+ .bgimg-3 {
+     background-attachment: initial;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 90rem;
+ }
+ /* First image (Logo. Full height) */
+ 
+ .bgimg-1 {
+     background-image: url(assets/images/fondo-metal-grunge-aranazos-manchas_1048-14029.jpg);
+     /* min-height: 100%; */
+     min-height: 700px;
+     background-size: cover;
+ }
+ /* Second image (Portfolio) */
+ 
+ .bgimg-2 {
+     background-image: url(assets/images/fondo-metal-grunge-aranazos-manchas_1048-14029.jpg);
+     min-height: 700px;
+     background-size: cover;
+     background-position: absolute;
+ }
+ 
+ .bgimg-3 {
+     background-image: url(assets/images/fondo-abstracto-negro-oscuro-astillas-madera_24972-208.webp);
+     /* min-height: 100%; */
+     min-height: 100%;
+     background-size: cover;
+ }
+ 
+ .w3-wide {
+     letter-spacing: 10px;
+ }
+ 
+ .w3-hover-opacity {
+     cursor: pointer;
+ }
+ /* Turn off parallax scrolling for tablets and phones */
+ 
+ @media only screen and (max-device-width: 2100px) {
+     .bgimg-2,
+     .bgimg-3 {
+         background-attachment: scroll;
+         min-height: 950px;
+     }
+ }
+ 
+ .top-5 {
+     padding-top: 5%;
+ }
+ 
+ .bold {
+     font-weight: bolder;
+ }
+ 
+ a {
+     overflow: hidden;
+     position: relative;
+     display: inline-block;
+     font-family: "Helvetica Neue", sans-serif;
+     font-size: 20px;
+     color: white;
+     text-decoration: none;
+     margin-top: 10px;
+     color: #f8fafb;
+     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+ }
+ 
+ a::before,
+ a::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     left: 0;
+ }
+ 
+ a::before {
+     background-color: #54b3d6;
+     height: 2px;
+     bottom: 0;
+     transform-origin: 100% 50%;
+     transform: scaleX(0);
+     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+ }
+ 
+ a::after {
+     content: attr(data-replace);
+     height: 100%;
+     top: 0;
+     transform-origin: 100% 50%;
+     transform: translate3d(200%, 0, 0);
+     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+     color: #54b3d6;
+ }
+ 
+ a:hover::before {
+     transform-origin: 0% 50%;
+     transform: scaleX(1);
+ }
+ 
+ a:hover::after {
+     transform: translate3d(0, 0, 0);
+ }
+ 
+ a span {
+     display: inline-block;
+     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+ }
+ 
+ a:hover span {
+     transform: translate3d(-200%, 0, 0);
+ }
+ /*title home */
+ 
+ h4 {
+     font-family: "ALoveofThunder";
+     text-align: left;
+     margin: 1rem 0;
+     font-size: 6rem;
+     font-weight: 300;
+     position: relative;
+     @media only screen and (max-width: 1100px) {
+         font-size: 2.2rem;
+     }
+     @media only screen and (max-width: 900px) {
+         font-size: 1.6rem;
+     }
+     @media only screen and (max-width: 700px) {
+         font-size: 1.4rem;
+     }
+     @media only screen and (max-width: 480px) {
+         font-size: 1.2rem;
+     }
+     &:before {
+         content: "«";
+         position: absolute;
+         left: 50%;
+         top: 2rem;
+         transform: translateX(-50%) rotate(270deg);
+     }
+ }
+ 
+ h2 {
+     position: relative;
+     left: 10%;
+     font-family: "ALoveofThunder";
+     font-size: 6rem;
+     color: transparent;
+     text-transform: uppercase;
+     @media only screen and (max-width: 1100px) {
+         font-size: 5.4rem;
+     }
+     @media only screen and (max-width: 900px) {
+         font-size: 4.6rem;
+     }
+     @media only screen and (max-width: 700px) {
+         font-size: 3.2rem;
+     }
+     @media only screen and (max-width: 480px) {
+         font-size: 2.8rem;
+         left: -10%;
+     }
+     @media only screen and (max-width: 300px) {
+         font-size: 2.1rem;
+     }
+     &:hover span:nth-child(1) {
+         transform: translateY(-3.2rem);
+         @media only screen and (max-width: 1100px) {
+             transform: translateY(-3rem);
+         }
+         @media only screen and (max-width: 900px) {
+             transform: translateY(-2.5rem);
+         }
+         @media only screen and (max-width: 700px) {
+             transform: translateY(-1.77rem);
+         }
+         @media only screen and (max-width: 480px) {
+             transform: translateY(-1.6rem);
+         }
+         @media only screen and (max-width: 280px) {
+             transform: translateY(-1.3rem);
+         }
+     }
+     &:hover span:nth-child(2) {
+         transform: translateY(2.8rem);
+         @media only screen and (max-width: 1100px) {
+             transform: translateY(2.7rem);
+         }
+         @media only screen and (max-width: 900px) {
+             transform: translateY(2.2rem);
+         }
+         @media only screen and (max-width: 700px) {
+             transform: translateY(1.6rem);
+         }
+         @media only screen and (max-width: 480px) {
+             transform: translateY(1.4rem);
+         }
+         @media only screen and (max-width: 280px) {
+             transform: translateY(1.2rem);
+         }
+     }
+     &:hover span:nth-child(3) {
+         opacity: 1;
+         transition: opacity 700ms ease;
+     }
+     &:hover span:nth-child(4) {
+         opacity: 1;
+         transition: opacity 700ms ease;
+     }
+     &:hover span:nth-child(5) {
+         opacity: 1;
+         transition: opacity 700ms ease;
+     }
+     & span:nth-child(1),
+     & span:nth-child(2) {
+         position: absolute;
+         top: 0;
+         left: 0;
+         color: #f5f7fb;
+         transition: 0.5s;
+         overflow: hidden;
+     }
+     & span:nth-child(1) {
+         clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+     }
+     & span:nth-child(2) {
+         clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+     }
+     & span:nth-child(3) {
+         position: absolute;
+         top: 20%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         opacity: 0;
+         transition: opacity 350ms ease;
+         font-size: 1.8rem;
+         color: #fff;
+         background: #B55A30;
+         width: 97.5%;
+         padding-left: 5px;
+         text-align: center;
+         letter-spacing: 0.5rem;
+         word-spacing: 1rem;
+         line-height: 100%;
+         @media only screen and (max-width: 1100px) {
+             font-size: 1.6rem;
+         }
+         @media only screen and (max-width: 900px) {
+             font-size: 1.4rem;
+             width: 97%;
+             letter-spacing: 4px;
+         }
+         @media only screen and (max-width: 700px) {
+             font-size: 0.95rem;
+             width: 96%;
+             letter-spacing: 3px;
+             word-spacing: 0.5rem;
+         }
+         @media only screen and (max-width: 480px) {
+             font-size: 0.85rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+         @media only screen and (max-width: 280px) {
+             font-size: 0.80rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+     }
+     & span:nth-child(4) {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         opacity: 0;
+         transition: opacity 350ms ease;
+         font-size: 1.8rem;
+         color: #fff;
+         background: #87CEEB;
+         width: 97.5%;
+         padding-left: 5px;
+         text-align: center;
+         letter-spacing: 0.5rem;
+         word-spacing: 2rem;
+         line-height: 100%;
+         @media only screen and (max-width: 1100px) {
+             font-size: 1.6rem;
+         }
+         @media only screen and (max-width: 900px) {
+             font-size: 1.4rem;
+             width: 97%;
+             letter-spacing: 4px;
+         }
+         @media only screen and (max-width: 700px) {
+             font-size: 0.95rem;
+             width: 96%;
+             letter-spacing: 3px;
+             word-spacing: 0.5rem;
+         }
+         @media only screen and (max-width: 480px) {
+             font-size: 0.85rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+         @media only screen and (max-width: 280px) {
+             font-size: 0.80rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+     }
+     & span:nth-child(5) {
+         position: absolute;
+         top: 80%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         opacity: 0;
+         transition: opacity 350ms ease;
+         font-size: 1.8rem;
+         color: #fff;
+         background: #009688;
+         width: 97.5%;
+         padding-left: 5px;
+         text-align: center;
+         letter-spacing: 0.5rem;
+         word-spacing: 2rem;
+         line-height: 100%;
+         @media only screen and (max-width: 1100px) {
+             font-size: 1.6rem;
+         }
+         @media only screen and (max-width: 900px) {
+             font-size: 1.4rem;
+             width: 97%;
+             letter-spacing: 4px;
+         }
+         @media only screen and (max-width: 700px) {
+             font-size: 0.95rem;
+             width: 96%;
+             letter-spacing: 3px;
+             word-spacing: 0.5rem;
+         }
+         @media only screen and (max-width: 480px) {
+             font-size: 0.85rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+         @media only screen and (max-width: 280px) {
+             font-size: 0.80rem;
+             letter-spacing: 2px;
+             word-spacing: 0.2rem;
+         }
+     }
+ }
