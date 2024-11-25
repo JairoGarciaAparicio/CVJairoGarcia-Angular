@@ -1,28 +1,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css" />
-<div *ngFor="let job2 of job2List" class="w3-light-blue" style="border-radius: 10px; margin-top: 30px">
+<div *ngFor="let job4 of job4List" class="w3-light-blue" style="border-radius: 10px; margin-top: 30px">
     <mat-card style="
       background-color: rgb(20, 21, 21);
       border-radius: 10px;
       padding: 30px;
     ">
-        <mat-card-title>{{ job2.entity }}</mat-card-title>
-        <mat-card-subtitle>{{ job2.position }}</mat-card-subtitle>
+        <mat-card-title>{{ job4.entity }}</mat-card-title>
+        <mat-card-subtitle>{{ job4.position }}</mat-card-subtitle>
         <div class="row" style="margin-left: 10px">
             <div class="col-md-8">
-                <b>From: </b> {{ job2.from | date : "MMM, yy" }}<br />
-                <b>To: </b> {{ job2.to | date : "MMM, yy" }}
+                <b>From: </b> {{ job4.from | date : "MMM, yy" }} <br />
+                <b>To: </b> {{ job4.to | date : "MMM, yy" }}
             </div>
             <div class="col-md-4" style="padding-right: 10%">
-                <img mat-card-image src="{{ job2.imageUrl }}" alt="Company Logo" />
+                <img mat-card-image src="{{ job4.imageUrl }}" alt="Company Logo" />
             </div>
         </div>
         <div style="margin-left: 20px">
             <div class="row col-md-12"><b>Name </b></div>
-            <div class="row col-md-12">{{ job2.name }}</div>
+            <div class="row col-md-12">{{ job4.name }}</div>
             <div class="row col-md-12"><b>Technologies </b></div>
-            <div class="row col-md-12">{{ job2.technology }}</div>
+            <div class="row col-md-12">{{ job4.technology }}</div>
             <div class="row col-md-12"><b>Responsabilities </b></div>
-            <div class="row col-md-12">{{ job2.responsability }}</div>
+            <div class="row col-md-12">{{ job4.responsability }}</div>
         </div>
     </mat-card>
     <hr />

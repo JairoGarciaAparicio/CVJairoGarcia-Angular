@@ -3,6 +3,7 @@ import { WorkExperienceElement } from '../models/work-experience-element.model';
 import { Job1 } from '../models/work-experience-job1.model';
 import { Job2 } from '../models/work-experience-job2.model';
 import { Job3 } from '../models/work-experience-job3.model';
+import { Job4 } from '../models/work-experience-job4.model';
 import JSONinfo from '../../../assets/work-experience.json';
 
 @Injectable({
@@ -14,6 +15,7 @@ export class WorkExperienceService {
     job1: any[] = []
     job2: any[] = []
     job3: any[] = []
+    job4: any[] = []
 
     constructor() { 
         this.processInfoFromJSON();
@@ -32,6 +34,9 @@ export class WorkExperienceService {
         JSONinfo.job3.forEach((job3) => {
             this.job3.push(job3);
         });
+        JSONinfo.job4.forEach((job4) => {
+            this.job4.push(job4);
+        });
     }
 
     getWorkExperienceElements(): WorkExperienceElement[] {
@@ -46,5 +51,8 @@ export class WorkExperienceService {
     }
     getJob3(): Job3[] {
         return this.job3;
+    }
+    getJob4(): Job4[] {
+        return this.job4;
     }
 }

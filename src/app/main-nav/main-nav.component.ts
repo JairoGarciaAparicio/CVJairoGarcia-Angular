@@ -3,8 +3,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-
-
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
@@ -22,5 +20,5 @@ export class MainNavComponent {
   onOpenMenu(menu: any): void {
     console.log(menu);
   }
-
+  
 }

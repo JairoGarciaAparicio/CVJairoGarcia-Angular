@@ -1,22 +1,29 @@
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-<div *ngFor="let job1 of job1List" class="w3-light-blue" style="border-radius: 10px;margin-top:30px;">
-    <mat-card style="background-color:rgb(20, 21, 21); border-radius: 10px;padding:30px;">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css" />
+<div *ngFor="let job1 of job1List" class="w3-light-blue" style="border-radius: 10px; margin-top: 30px">
+    <mat-card style="
+      background-color: rgb(20, 21, 21);
+      border-radius: 10px;
+      padding: 30px;
+    ">
         <mat-card-title>{{ job1.entity }}</mat-card-title>
         <mat-card-subtitle>{{ job1.position }}</mat-card-subtitle>
-        <div class="row " style="margin-left:20px; ">
-            <div class="col-md-4 "><b>From: </b> {{ job1.from | date: 'MMM, yy' }}</div>
-            <div class="col-md-4 "><b>To: </b> {{ job1.to | date: 'MMM, yy' }}</div>
-            <div class="col-md-4 " style="padding-right:10%;margin-top:30px; ">
-                <img mat-card-image src="{{ job1.imageUrl }}" alt="Company Logo"></div>
+        <div class="row" style="margin-left: 10px">
+            <div class="col-md-8">
+                <b>From: </b> {{ job1.from | date : "MMM, yy" }} <br />
+                <b>To: </b> {{ job1.to | date : "MMM, yy" }}
+            </div>
+            <div class="col-md-4" style="padding-right: 10%">
+                <img mat-card-image src="{{ job1.imageUrl }}" alt="Company Logo" />
+            </div>
         </div>
-        <div style="margin-left:20px;">
-            <div class="row col-md-12 "><b>Name </b></div>
-            <div class="row col-md-12 ">{{ job1.name }}</div>
-            <div class="row col-md-12 "><b>Technologies </b></div>
-            <div class="row col-md-12 ">{{ job1.technology }}</div>
-            <div class="row col-md-12 "><b>Responsabilities </b></div>
-            <div class="row col-md-12 ">{{ job1.responsability }}</div>
+        <div style="margin-left: 20px">
+            <div class="row col-md-12"><b>Name </b></div>
+            <div class="row col-md-12">{{ job1.name }}</div>
+            <div class="row col-md-12"><b>Technologies </b></div>
+            <div class="row col-md-12">{{ job1.technology }}</div>
+            <div class="row col-md-12"><b>Responsabilities </b></div>
+            <div class="row col-md-12">{{ job1.responsability }}</div>
         </div>
     </mat-card>
-    <hr>
+    <hr />
 </div>
