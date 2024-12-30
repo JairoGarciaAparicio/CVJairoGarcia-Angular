@@ -1,0 +1,30 @@
+{
+    "projects": [{
+            "name": "Web CV",
+            "info": [
+                "Here I have created my web curriculum in Angular 13 to be able to show who I am, what experience I have, my training and some personal work done."
+            ],
+            "technologies": "Angular 13, Ionos domains and hosting.",
+            "repository": "https://github.com/JairoGarciaAparicio/Angular-projects/tree/master",
+            "web": "jairogarciaaparicio.com"
+        },
+        {
+            "name": "Search And Find",
+            "info": [
+                "This is the project I did for the end of the module.In it, I developed an application for buying and selling homes in which a user can register and publish a property or buy and / or request information about any of the available homes."
+            ],
+            "technologies": "PHP, Javascript, MySQL Workbench.",
+            "repository": "https://github.com/JairoGarciaAparicio/PHP-projects/tree/main/TFG%20-%20Search%26Find",
+            "web": ""
+        },
+        {
+            "name": "Portfolio",
+            "info": [
+                "Here I have attached a dossier with some of my works as a layout designer and graphic designer, click on the link to see them."
+            ],
+            "technologies": "Photoshop, Illustrator, Indesign.",
+            "repository": "https://drive.google.com/file/d/1MFYISo8BzgS2p3rx7TsTVVaRxmhF8v7M/view?usp=share_link",
+            "web": ""
+        }
+    ]
+}

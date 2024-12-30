@@ -1,0 +1,65 @@
+{
+    "workExperience": [{
+            "name": "PSS",
+            "relativeUrl": "job1"
+        },
+        {
+            "name": "Sia Group",
+            "relativeUrl": "job2"
+        },
+        {
+            "name": "CAM",
+            "relativeUrl": "job3"
+        },
+        {
+            "name": "Publihoy",
+            "relativeUrl": "job4"
+        }
+
+    ],
+
+    "job1": [{
+        "entity": "PSS",
+        "position": "Front-End Developer",
+        "from": "10/01/2023",
+        "to": null,
+        "name": "Developer in the Front-End team",
+        "technology": "TypeScript, JavaScript, SCSS, Html, Angular, Bootstrap, GitHub, GitLab, Nexus, Openshift, Jira, Cypress, JSON, Postman,Metodologias Agile, Visual Studio Code.",
+        "responsability": "Development of new functionalities, bugs, maintenance for clients in a private environment in the Inetum company for Renault, and since the middle of the year developing for state social benefits applications such as IMV, IT, PSSC.",
+        "imageUrl": "https://www.pss-ti.com/wp-content/uploads/2022/06/pss-image-social.png"
+
+    }],
+    "job2": [{
+        "entity": "Sia Group",
+        "position": "Full Stack Developer",
+        "from": "04/03/2021",
+        "to": "11/20/2022",
+        "name": "Digital signature holder",
+        "technology": "Java, JavaEE, JavaScript, Angular, Css, Html, PostgresSQL/Oracle, Maven, SVN, Git,  Ajax, jQuery, Okta, Eclipse.",
+        "responsability": "Development of new functionalities of the signature book, execution of projects through small developments to adjust the functionality to the needs of the clients, documentation and tests carried out on the new versions.",
+        "imageUrl": "data:image/png;base64,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"
+
+    }],
+    "job3": [{
+        "entity": "CAM",
+        "position": "Home help coordinator",
+        "from": "02/10/2016",
+        "to": "11/04/2020",
+        "name": "Home help Community of Madrid",
+        "technology": "Database, CRM, Office package.",
+        "responsability": "As coordinator of the home help service, he managed the daily incidents of the service, organized the team schedules, visited the users, made social reports, registered users and workers in the system, evaluated the degree of dependency.",
+        "imageUrl": "https://opovictor.es/wp-content/uploads/2017/07/logo-vector-comunidad-madrid.jpg"
+
+    }],
+    "job4": [{
+        "entity": "Publihoy",
+        "position": "Layout artist and graphic designer",
+        "from": "03/03/2014",
+        "to": "02/09/2016",
+        "name": "Publihoy",
+        "technology": "Adobe cs6 Package.",
+        "responsability": "Responsible for the creative part of design and layout of the magazine.",
+        "imageUrl": "https://adser.es/wp-content/uploads/2016/02/publihoy.png"
+
+    }]
+}
